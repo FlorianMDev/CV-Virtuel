@@ -1,0 +1,226 @@
+html {
+    background-color: white;
+    padding: 0;    
+    /* max-width: 1131px; */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+* ul,
+li {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+/* Couleurs :
+Bleu marine/Foncé : rgb(19, 23, 73) 3px;
+
+Rouge + vif : rgb(250, 74, 74);
+Rouge transparent, un peu clair/rosé : rgba(250, 74, 74, 0.5)
+Rouge + foncé : color: rgb(124, 38, 38); */
+
+
+body {
+    border-left: solid 1px rgb(19, 23, 73);
+    border-right: solid 1px rgb(19, 23, 73);
+    max-width: 1150px;
+    margin: 0 auto;
+    background-color: rgba(74, 156, 250, 0.3)
+}
+
+nav,
+main,
+footer {
+    margin: 0px 6vw;
+    border-left: dashed 1px rgb(75, 75, 75);
+    border-right: dashed 1px rgb(75, 75, 75);
+    background-color: white;
+}
+
+/* Header, barre de navigation */
+
+nav {
+    padding-bottom: 1rem;
+    border-bottom: double 10px rgba(74, 156, 250, 0.8);
+    padding-top: 1px;
+}
+
+#profile-pic {
+    border: ridge rgb(19, 23, 73) 3px;
+    border-radius: 50%;
+    width: 30%;
+    box-shadow: 15px 15px 15px rgba(32, 32, 32, 0.8);
+    margin: 5px auto;
+}
+
+nav i,
+a {
+    color: rgba(74, 156, 250, 0.8);
+    text-decoration: none;
+}
+
+nav a i:hover, nav a:hover {
+    color: rgb(19, 23, 73);
+}
+
+.blocs-nav {
+    width: 30%;
+}
+
+.blocs-nav:first-child {
+    margin-left: 4%;
+}
+
+.blocs-nav:last-child {
+    margin-right: 4%;
+}
+
+
+
+
+
+/* MAIN */
+
+h1 {
+    border-bottom: double 10px rgba(74, 156, 250, 0.8);
+    padding: 0.8rem 0;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+}
+
+h4 {
+    margin-top: 1.2rem;
+}
+
+
+.colonne {
+    width: 44%;
+}
+
+
+.blocs {
+    border: double 5px rgba(74, 156, 250, 0.8);
+    border-radius: 1rem;
+    margin: 1rem 0;
+}
+
+section.blocs h2 {
+    margin: 1rem auto;
+    padding-bottom: 1rem;
+    border-bottom: dashed 2px rgba(74, 156, 250, 0.6);
+    width: 80%;
+}
+
+#resume {
+    padding: 1rem auto;
+    
+}
+
+/* JAUGES */
+
+.blocs span {
+    overflow: hidden;
+    text-overflow : '...';
+}
+
+.scale, .bigScale {
+    width: 90%;
+    border-radius: 1rem;
+    align-items: stretch;
+}
+
+.jauges, .grandeJauges {
+    padding: 0.4rem 0;
+    border-radius: 1rem;
+    position: relative;
+    /* background: rgba(255, 0, 0, 0.6); */
+}
+
+
+
+
+/* FOOTER - CENTRES D'INTERETS */
+
+#hobbies {
+    border-left: solid 2px rgba(74, 156, 250, 0.8);
+    border-right: solid 2px rgba(74, 156, 250, 0.8);
+    border-top: solid 2px rgba(74, 156, 250, 0.8);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin: 0 auto;
+    width: 10vw;
+    text-align: center;
+}
+
+#footer {
+    padding : 0.6rem 0;
+    border-top : solid 2px rgba(74, 156, 250, 0.8);
+}
+
+
+footer li {    
+    width: 20%;
+    text-align: center;    
+}
+
+footer i {
+    font-size : 2rem;
+    padding-bottom: 0.2rem;
+    color: rgba(74, 156, 250, 0.8);
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .colonne {
+        width: 90%;
+    }
+
+    #resume {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 5%;
+    }
+
+    .blocs-nav:first-child {
+        margin-left: 2%;
+    }
+
+    .blocs-nav:last-child {
+        margin-right: 2%;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .blocs span {
+        font-size: 0.8rem;
+    }
+    #profile-pic {
+        margin-top: 2rem;
+    }
+    footer i {
+        font-size : 1.6rem;
+    }
+
+    footer li {
+        font-size : 0.7rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #profile-pic {
+        margin-top: 2.4rem;
+    }
+}
