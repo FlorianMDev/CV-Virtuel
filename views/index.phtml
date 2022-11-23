@@ -27,22 +27,34 @@
     <header>
         <nav class="d-flex justify-content-between">
             <lu class="blocs-nav">
-                <li class="nav-item mb-1 me-md-2">Florian Moulu</li>
+
                 <li class="nav-item mb-1 me-md-2">
                     <a href="https://www.linkedin.com/in/florian-moulu-b499a8252" target="blank">
                         <span>
-                            <i class="fa-brands fa-linkedin"></i>&nbsp;:&nbsp;
-                            <u>Florian Moulu</u>
+                            <i class="fa-brands fa-linkedin"></i>&nbsp;
+                            <u>linkedin</u>
                         </span>
                     </a>
                 </li>
+
                 <li class="nav-item mb-1 me-md-2">
-                    <a href="#" target="blank"><u>Portfolio</u>
+                    <a href="https://github.com/FlorianMDev" target="blank">
+                        <i class="fa-brands fa-github"></i>
+                        <u>Github</u>
                     </a>
                 </li>
+
+                <li class="nav-item mb-1 me-md-2">
+                    <a href="#" target="blank"> <u>Portfolio</u> </a>
+                </li>
+
             </lu>
 
-            <img id="profile-pic" class="img-fluid" src="https://media-exp1.licdn.com/dms/image/D5603AQEFoinky52-ng/profile-displayphoto-shrink_800_800/0/1665227950540?e=1671667200&v=beta&t=x56iu5KLO1SV4iFsAnaPOiOrtf0EWQDFX8cPbuLGLmY" alt="">
+
+            <div id="profile-pic" class="d-flex flex-column blocs-nav">
+                <p class="text-center mb-0">Florian Moulu</p>
+                <img class="img-fluid" src="https://media-exp1.licdn.com/dms/image/D5603AQEFoinky52-ng/profile-displayphoto-shrink_800_800/0/1665227950540?e=1671667200&v=beta&t=x56iu5KLO1SV4iFsAnaPOiOrtf0EWQDFX8cPbuLGLmY" alt="">
+            </div>
 
             <div class="d-flex blocs-nav justify-content-end">
 
@@ -79,194 +91,123 @@
             Développeur Web
         </h1>
 
-
-
         <div class="d-flex justify-content-evenly py-3" id="resume">
 
             <!-- DEBUT BLOC COMPETENCES NUMERIQUES -->
             <div class="colonne d-flex flex-column">
                 <section class="blocs flex-grow-1">
-                    <h2 class="text-center">Compétences Numériques</h2>
-                    <h3 class="text-center">Développement Web&nbsp;:</h3>
-                    <div class="mx-4">
+                    <h2 class="text-center">Connaissances Numériques</h2>
+                    <div class="mx-4 text-center">
 
-                        <div class="d-flex my-2">
-                            <div class="d-flex flex-column w-50 ">
-                                <span>Javascript&nbsp;:</span>
-                                <div class="scale" style="border: solid black <?= $borderScales ?>px;">
-                                    <div class="jauges" style="width: <?= $javascript ?>%"></div>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column w-50">
-                                <span>PHP&nbsp;:</span>
-                                <div class="scale" style="border: solid black <?= $borderScales ?>px;">
-                                    <div class="jauges" style="width: <?= $php ?>%"></div>
-                                </div>
-                            </div>
-                        </div>
+                        <h3>Développement Web</h3>
 
-                        <div class="d-flex my-2">
-                            <div class="d-flex flex-column w-50">
-                                <span>Intégration&nbsp;:</span>
-                                <div class="scale" style="border: solid black <?= $borderScales ?>px;">
-                                    <div class="jauges" style="width: <?= $integration ?>%"></div>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column w-50">
-                                <span>Symfony&nbsp;:</span>
-                                <div class="scale" style="border: solid black <?= $borderScales ?>px;">
-                                    <div class="jauges" style="width: <?= $symfony ?>%"></div>
-                                </div>
-                            </div>
-                        </div>
+                        <h4>Connaissance</h4>
+                        <ul>
+                            <li>--Javascript natif--</li>
+                            <li>
+                                --<h5 class="d-inline-block">Intégration</h5>--
+                                <p class="mb-0">CSS Natif, Bootstrap</p>
+                            </li>
+                            <li>--React--</li>
+                            <li>--PHP natif--</li>
+                            <li>--Symfony--</li>
+                            <li>
+                                --<h5 class="d-inline-block">Node</h5>--
+                                <p class="mb-0">Express, EJS</p>
+                            </li>
+                            <li>--SQL--</li>
+                        </ul>
 
-                        <div class="d-flex my-2">
-                            <div class="d-flex flex-column w-50">
-                                <span>React&nbsp;:</span>
-                                <div class="scale" style="border: solid black <?= $borderScales ?>px;">
-                                    <div class="jauges" style="width: <?= $react ?>%"></div>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column w-50">
-                                <span>NodeJS&nbsp;:</span>
-                                <div class="scale" style="border: solid black <?= $borderScales ?>px;">
-                                    <div class="jauges" style="width: <?= $node ?>%"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="d-flex my-2">
-                            <div class="d-flex flex-column w-50">
-                                <span>P.O.O.&nbsp;:</span>
-                                <div class="scale" style="border: solid black <?= $borderScales ?>px;">
-                                    <div class="jauges" style="width: <?= $poo ?>%"></div>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column w-50">
-                                <span>Sécurité&nbsp;:</span>
-                                <div class="scale" style="border: solid black <?= $borderScales ?>px;">
-                                    <div class="jauges" style="width: <?= $securite ?>%"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="d-flex my-2">
-                            <div class="d-flex flex-column w-50">
-                                <span>Debug,&nbsp;autonomie&nbsp;:</span>
-                                <div class="scale" style="border: solid black <?= $borderScales ?>px;">
-                                    <div class="jauges" style="width: <?= $debug ?>%"></div>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column w-50">
-                                <span>VSC,&nbsp;Emmet,&nbsp;method.&nbsp;:</span>
-                                <div class="scale" style="border: solid black <?= $borderScales ?>px;">
-                                    <div class="jauges" style="width: <?= $vsc ?>%"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <h3 class="text-center">Autres domaines</h3>
-
-                    <div class="mx-4">
-
-                        <div class="d-flex my-2">
-                            <div class="d-flex flex-column w-50">
-                                <span>UI Design&nbsp;:</span>
-                                <div class="scale" style="border: solid black <?= $borderScales ?>px;">
-                                    <div class="jauges" style="width: <?= $ui ?>%"></div>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column w-50">
-                                <span>UX Design&nbsp;:</span>
-                                <div class="scale" style="border: solid black <?= $borderScales ?>px;">
-                                    <div class="jauges" style="width: <?= $ux ?>%"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="d-flex my-2">
-                            <div class="d-flex flex-column w-50">
-                                <span>Graphisme&nbsp;:</span>
-                                <div class="scale" style="border: solid black <?= $borderScales ?>px;">
-                                    <div class="jauges" style="width: <?= $graphisme ?>%"></div>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column w-50">
-                                <span>Montage&nbsp;vidéo&nbsp;:</span>
-                                <div class="scale" style="border: solid black <?= $borderScales ?>px;">
-                                    <div class="jauges" style="width: <?= $videoMontage ?>%"></div>
-                                </div>
-                            </div>
-                        </div>
+                        <h4>Notions</h4>
+                        <ul>
+                            <li>--Programmation Orientée Objet--</li>
+                            <li>--MongoDB--</li>
+                        </ul>
 
 
-                        <div class="d-flex my-2">
-                            <div class="d-flex flex-column w-50">
-                                <span>Suite&nbsp;Office&nbsp;:</span>
-                                <div class="scale" style="border: solid black <?= $borderScales ?>px;">
-                                    <div class="jauges" style="width: <?= $office ?>%"></div>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column w-50">
-                                <span>Culture&nbsp;Numérique&nbsp;:</span>
-                                <div class="scale" style="border: solid black <?= $borderScales ?>px;">
-                                    <div class="jauges" style="width: <?= $culture ?>%"></div>
-                                </div>
-                            </div>
-                            
-                        </div>
+                        <h3>Autres domaines</h3>
+
+                        <h4>Connaissance</h4>
+                        <ul>
+                            <li>--Graphisme--</li>
+                            <li>--Montage Vidéo--</li>
+                            <li>--Suite Office--</li>
+                        </ul>
+
+                        <h4>Notions</h4>
+                        <ul>
+                            <li>--Design Ux/Ui--</li>
+                        </ul>
 
 
-                    </div>
+
+
+                </section>
+
+
+                <div class="blocs">
                     <h2 class="text-center"></h2>
                     <h2 class="text-center">Langues</h2>
 
                     <div class="mx-4">
 
-                        <div class="my-2">
+                        <div class="my-2 mx-3">
                             <div class="d-flex flex-column w-100">
                                 <span>Anglais&nbsp;:</span>
-                                <div class="bigScale" style="border: solid black <?= $borderScales ?>px;">
-                                    <div class="grandeJauges" style="width: <?= $anglais ?>%"></div>
+                                <div class="scale" style="border: solid black <?= $borderScales ?>px;">
+                                    <div class="jauges" style="width: <?= $anglais ?>%"></div>
                                 </div>
                                 <p>
-                                    Niveau courant, presque bilingue. Compréhension et expression, à l'oral comme à l'ecrit.
+                                    Niveau courant, presque bilingue. Compréhension, expression, orale comme écrite.
                                 </p>
                             </div>
                             <div class="d-flex flex-column w-100">
                                 <span>Espagnol&nbsp;:</span>
                                 <div class="scale" style="border: solid black <?= $borderScales ?>px;">
-                                    <div class="grandeJauges" style="width: <?= $espagnol ?>%"></div>
+                                    <div class="jauges" style="width: <?= $espagnol ?>%"></div>
                                 </div>
                                 <p>
                                     Bon niveau de compréhension.
                                 </p>
                             </div>
                         </div>
-
-
-
-                </section>
+                    </div>
+                </div>
             </div>
             <!-- FIN BLOC COMPETENCES NUMERIQUES -->
 
             <!-- DEBUT BLOC COMPETENCES DIVERSES ET EXPERIENCES -->
             <div class="colonne d-flex flex-column justify-content-between">
-                <section class="blocs text-center flex-grow-1">
-                    <h2>Compétences</h2>
-                    <ul>
-                        <li>Logique</li>
-                        <li>Méthodologie</li>
-                        <li>Curiosité</li>
-                        <li>Créativité</li>
-                        <li>Polyvalence</li>
-                        <li>Mémoire de travail</li>
-                        <li>Pédagogie/Didactique</li>
-                        <li>Esprit d'équipe</li>
-                        <li>Adaptabilité</li>
-                    </ul>
+                <section class="blocs flex-grow-1">
+
+                    <div class="text-center">
+                        <h2>Compétences</h2>
+                        <ul id="competences">
+                            <li>Logique</li>
+                            <li>Méthodologie</li>
+                            <li>Curiosité</li>
+                            <li>Créativité</li>
+                            <li>Polyvalence</li>
+                            <li>Autonomie</li>
+                            <li>Mémoire de travail</li>
+                            <li>Pédagogie/Didactique</li>
+                            <li>Esprit d'équipe</li>
+                            <li>Adaptabilité</li>
+                        </ul>
+
+                        <h4>Développement :</h4>
+
+                        <ul>
+                            <li>Résolution de problème</li>
+                            <li>Algorithmique</li>
+                            <li>Documentation, autonomie</li>
+                            <li>Debug</li>
+                            <li>Méthodologie avec VSC, Emmet</li>
+                        </ul>
+                    </div>
+
+
+
                 </section>
 
 
@@ -286,7 +227,7 @@
                         <li class="list-group-item">
                             <h5>2018-2022&nbsp;: Entrepreunariat</h5>
                             Projets personnels visant à monétiser mes loisirs et centres d'intérêt et à produire du contenu. <br>
-                            Création de contenus relatifs aux jeux-vidéos : Revenus totaux de + de 20 000€. <br>
+                            Création de contenus relatifs aux jeux-vidéos : Revenus totaux de + de 23 000€. <br>
                             Petits boulots à côté de manière irrégulière
                         </li>
                         <li class="list-group-item">
@@ -332,26 +273,19 @@
 </body>
 <script src="index.js"></script>
 
-<!-- Script :
+<!-- Script (Change la couleur des jauges selon la valeur sur 100):
 let scale = document.querySelector(".scale")
-let bigScale = document.querySelector(".bigScale")
-
 let borderScales = document.getElementById("borderScales").getAttribute('data')
 
-// "scale" correspond à l'espace vide dans lequel la jauge vient s'insérer. On veut savoir la largeur totale.
+// "scale" correspond à l'espace vide dans lequel la jauge de couleur vient s'insérer. On veut savoir la largeur totale.
 let largeurMaxJauge = scale.offsetWidth - (borderScales);
-let largeurMaxGrandesJauges = bigScale.offsetWidth - (borderScales);
 // On créé des tableaux qui serviront avec une boucle for à définir des variables pour chaque jauge.
 let jauges = document.querySelectorAll(".jauges")
-let grandeJauges = document.querySelectorAll(".grandeJauges")
 
 let r = [];
 let g = [];
 let largeurJauge = [];
 
-let r2 = [];
-let g2 = [];
-let largeurGrandeJauge = [];
 
 for (let i = 0; i < jauges.length; i++) {
     // La fonction offsetWidth renvoie la largeur en pixels. On la convertit en pourcentage de remplissage de la barre (scale)
@@ -372,52 +306,6 @@ for (let i = 0; i < jauges.length; i++) {
         ${0.75 + (largeurJauge[i] / 400)}
         )`;
 }
-
-for (let i = 0; i < grandeJauges.length; i++) {
-    // La fonction offsetWidth renvoie la largeur en pixels. On la convertit en pourcentage de remplissage de la barre (scale)
-    largeurGrandeJauge[i] = (grandeJauges[i].offsetWidth / (largeurMaxGrandesJauges / 100))
-    // On joue sur les paramètres r et g du rgb pour passer du rouge au vert. Pour des valeurs basses on voudra du rouge + foncé donc on réduit également le paramètre "r".
-    if (largeurGrandeJauge[i] < 35) {
-        r2[i] = (130 - (largeurGrandeJauge[i] * 1.3))
-        g2[i] = (0 + (largeurGrandeJauge[i] * 1.3))
-    } else {
-        r2[i] = (255 - (largeurGrandeJauge[i] * 2.55))
-        g2[i] = (0 + (largeurGrandeJauge[i] * 2.55))
-    }
-    // On applique finalement le style (couleur et transparence) aux grandeJauges avec les valeurs définies ci-dessus. La transparence commence à 0.75 car des valeurs trop basses renvoient des couleurs claires sur du blanc.
-    grandeJauges[i].style.backgroundColor = `rgba(
-        ${r2[i]},
-        ${g2[i]},
-        0,
-        ${0.75 + (largeurGrandeJauge[i] / 400)}
-        )`;
-} -->
-
-
-<!-- PHP :
-$javascript = 75;
-$php = 65;
-$integration = 70;
-$symfony = 70;
-$react = 40;
-$node = 60;
-$poo = 55;
-$securite = 35;
-$debug = 80;
-$vsc = 90;
-
-$ui = 40;
-$ux = 30;
-$graphisme = 55;
-$culture = 75;
-$photoshop = 60;
-$office = 55;
-
-$anglais = 93;
-$espagnol = 55;
-
-// Permet d'avoir une variable prenant en compte l'épaisseur de la bordure des "scales" afin de pouvoir calculer exactement la largeur max des jauges qui les remplissent, pour la variable largeurJauge
-$borderScales = 1; -->
-
+-->
 
 </html>
