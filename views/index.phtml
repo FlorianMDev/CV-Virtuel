@@ -2,263 +2,251 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<!-- Fontawesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- CSS -->
+	<link rel="stylesheet" href="style.css">
 
 
 </head>
 
 <body>
 
-    <!-- Passer une variable PHP au fichier .js : -->
-    <span id="borderScales" data="<?= $borderScales * 2 ?>"></span>
+	<!-- Passer une variable PHP au fichier .js : -->
+	<span id="borderScales" data="<?= $borderScales * 2 ?>"></span>
 
-    <!--  DEBUT DU HEADER -->
+	<!--  DEBUT DU HEADER -->
 
-    <header>
-        <nav class="d-flex justify-content-between">
-            <lu class="blocs-nav">
+	<header>
+		<nav class="d-flex justify-content-between">
+			<lu class="blocs-nav">
 
-                <li class="nav-item mb-1 me-md-2">
-                    <a href="https://www.linkedin.com/in/florian-moulu-b499a8252" target="blank">
-                        <span>
-                            <i class="fa-brands fa-linkedin"></i>&nbsp;
-                            <u>linkedin</u>
-                        </span>
-                    </a>
-                </li>
+				<li class="nav-item mb-1 me-md-2">
+					<a href="https://www.linkedin.com/in/florian-moulu-b499a8252" target="blank">
+						<span>
+							<i class="fa-brands fa-linkedin"></i>&nbsp;
+							<u>linkedin</u>
+						</span>
+					</a>
+				</li>
 
-                <li class="nav-item mb-1 me-md-2">
-                    <a href="https://github.com/FlorianMDev" target="blank">
-                        <i class="fa-brands fa-github"></i>
-                        <u>Github</u>
-                    </a>
-                </li>
+				<li class="nav-item mb-1 me-md-2">
+					<a href="https://github.com/FlorianMDev" target="blank">
+						<i class="fa-brands fa-github"></i>
+						<u>Github</u>
+					</a>
+				</li>
 
-                <li class="nav-item mb-1 me-md-2">
-                    <a href="#" target="blank"> <u>Portfolio</u> </a>
-                </li>
+				<!-- <li class="nav-item mb-1 me-md-2">
+					<a href="#" target="blank"> <u>Portfolio</u> </a>
+				</li> -->
 
-            </lu>
-
-
-            <div id="profile-pic" class="d-flex flex-column blocs-nav">
-                <p class="text-center mb-0">Florian Moulu</p>
-                <img class="img-fluid" src="https://media-exp1.licdn.com/dms/image/D5603AQEFoinky52-ng/profile-displayphoto-shrink_800_800/0/1665227950540?e=1671667200&v=beta&t=x56iu5KLO1SV4iFsAnaPOiOrtf0EWQDFX8cPbuLGLmY" alt="">
-            </div>
-
-            <div class="d-flex blocs-nav justify-content-end">
-
-                <lu class="text-end">
-                    <li class="nav-item mb-1">florianmoulu75@gmail.com</li>
-                    <li class="nav-item mb-1">07 81 69 14 23</li>
-                    <li class="nav-item mb-1">Paris</li>
-                </lu>
-
-                <lu class="text-end">
-                    <li class="nav-item mb-1 ms-2 disabled">
-                        <a href="mailto: florianmoulu75@gmail.com"><i class="fa-solid fa-envelope animated tada"></i></a>
-                    </li>
-                    <li class="nav-item mb-1 ms-2 disabled">
-                        <a href="tel:+33781691423 text-decoration-none"><i class="fa-solid fa-phone-flip animated tada"></i></a>
-                    </li>
-                    <li class="nav-item mb-1 ms-2 disabled"><i class="fa-solid fa-location-dot"></i>
-                    </li>
-                </lu>
-
-            </div>
+			</lu>
 
 
-        </nav>
-    </header>
+			<div id="profile-pic" class="d-flex flex-column blocs-nav">
+				<p class="text-center mb-0">Florian Moulu</p>
+				<img class="img-fluid" id="photo" src="assets/Sans-titre-1.png" alt="Photo">
+				<p class="text-center mt-3 mb-0">CV réalisé en HTML-CSS</p>
+			</div>
 
-    <!--  FIN DU HEADER -->
+			<div class="d-flex blocs-nav justify-content-end">
 
-    <!-- DEBUT DU MAIN -->
+				<lu class="text-end">
+					<li class="nav-item mb-1">florianmoulu75@gmail.com</li>
+					<li class="nav-item mb-1">07 81 69 14 23</li>
+					<li class="nav-item mb-1">Paris</li>
+				</lu>
 
-    <main>
+				<lu class="text-end">
+					<li class="nav-item mb-1 ms-2 disabled">
+						<a href="mailto: florianmoulu75@gmail.com"><i class="fa-solid fa-envelope animated tada"></i></a>
+					</li>
+					<li class="nav-item mb-1 ms-2 disabled">
+						<a href="tel:+33781691423 text-decoration-none"><i class="fa-solid fa-phone-flip animated tada"></i></a>
+					</li>
+					<li class="nav-item mb-1 ms-2 disabled"><i class="fa-solid fa-location-dot"></i>
+					</li>
+				</lu>
 
-        <h1 id="titre-dev" class="text-center">
-            Développeur Web
-        </h1>
+			</div>
 
-        <div class="d-flex justify-content-evenly py-3" id="resume">
 
-            <!-- DEBUT BLOC COMPETENCES NUMERIQUES -->
-            <div class="colonne d-flex flex-column">
-                <section class="blocs flex-grow-1">
-                    <h2 class="text-center">Connaissances Numériques</h2>
-                    <div class="mx-4 text-center">
+		</nav>
+	</header>
 
-                        <h3>Code</h3>
+	<!--  FIN DU HEADER -->
 
-                        <h4>Connaissance</h4>
-                        <ul>
+	<!-- DEBUT DU MAIN -->
+
+	<main>
+
+		<h1 id="titre-dev" class="text-center">
+			Développeur Web
+		</h1>
+
+		<div class="d-flex justify-content-evenly py-3" id="resume">
+
+			<!-- DEBUT BLOC COMPETENCES NUMERIQUES -->
+			<div class="colonne d-flex flex-column">
+				<section class="blocs flex-grow-1">
+					<h2 class="text-center">Connaissances Numériques</h2>
+					<div class="mx-4 text-center">
+
+						<h3>Code</h3>
+
+						<h4>Connaissance</h4>
+						<ul>
 							<li><h5 class="d-inline-block">--Javascript natif</h5>--</li>
-							<li>--<h5 class="d-inline-block">React</h5>--</li>
+							<li>--Typescript--</li>
+							<li>--React--</li>
+							<li>-Node--</li>
+							<li>--Programmation Orientée Objet--</li>
 							<li>
-                                --<h5 class="d-inline-block">Node</h5>--
-                                <p class="mb-0">Express, EJS</p>
-                            </li>
-                            <li>
-                                --<h5 class="d-inline-block">Intégration</h5>--
-                                <p class="mb-0">CSS Natif, SCSS, Bootstrap</p>
-                            </li>
-                            
-                            <li>--<h5 class="d-inline-block">PHP natif</h5>--</li>
-                            
-                        </ul>
+								--<h5 class="d-inline-block">Intégration</h5>--
+								<p class="mb-0">CSS Natif, SCSS, Bootstrap</p>
+							</li>
+						</ul>
 
-                        <h4>Notions</h4>
-                        <ul>
-                        <li>--C--</li>
-						<li>--Symfony--</li>
-						<li>--Programmation Orientée Objet--</li>
-                            <li>--MongoDB--</li>
-                        </ul>
+						<h4>Notions</h4>
+						<ul>
+						<li>--PHP--</li>
+						<li>--SQL--</li>
+						<li>--C--</li>						
+						<li>--MongoDB--</li>
+						</ul>
 
 
-                        <h3>Autres domaines</h3>
+						<h3>Autres domaines</h3>
 
-                        <h4>Connaissance</h4>
-                        <ul>
-                            <li>--Graphisme--</li>
-                            <li>--Montage Vidéo--</li>
-                            <li>--Suite Office--</li>
-                        </ul>
-
-                        <h4>Notions</h4>
-                        <ul>
-                            <li>--Design Ux/Ui--</li>
-                        </ul>
+						<h4>Connaissance</h4>
+						<ul>
+							<li>--Graphisme--</li>
+							<li>--Montage Vidéo--</li>
+							<li>--Suite Office--</li>
+						</ul>
+				</section>
 
 
+				<div class="blocs">
+					<h2 class="text-center"></h2>
+					<h2 class="text-center">Langues</h2>
 
+					<div class="mx-4">
 
-                </section>
+						<div class="my-2 mx-3">
+							<div class="d-flex flex-column w-100">
+								<span>Anglais&nbsp;:</span>
+								<div class="scale" style="border: solid black <?= $borderScales ?>px;">
+									<div class="jauges" style="width: <?= $anglais ?>%"></div>
+								</div>
+								<p>
+									Niveau courant. Compréhension, expression, orale comme écrite.
+								</p>
+							</div>
+							<div class="d-flex flex-column w-100">
+								<span>Espagnol&nbsp;:</span>
+								<div class="scale" style="border: solid black <?= $borderScales ?>px;">
+									<div class="jauges" style="width: <?= $espagnol ?>%"></div>
+								</div>
+								<p>
+									Niveau correct de compréhension.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- FIN BLOC COMPETENCES NUMERIQUES -->
 
+			<!-- DEBUT BLOC COMPETENCES DIVERSES ET EXPERIENCES -->
+			<div class="colonne d-flex flex-column justify-content-between">
+				<section class="blocs flex-grow-1">
+					<div class="text-center">
+						<h2>Compétences</h2>
+						<ul id="competences">
+							<li>Esprit logique</li>
+							<li>Méthodologie</li>
+							<li>Créativité</li>
+							<li>Polyvalence</li>
+							<li>Curiosité</li>
+							<li>Pédagogie/Didactique</li>
+							<li>Esprit d'équipe</li>
+						</ul>						
+					</div>
+				</section>
 
-                <div class="blocs">
-                    <h2 class="text-center"></h2>
-                    <h2 class="text-center">Langues</h2>
-
-                    <div class="mx-4">
-
-                        <div class="my-2 mx-3">
-                            <div class="d-flex flex-column w-100">
-                                <span>Anglais&nbsp;:</span>
-                                <div class="scale" style="border: solid black <?= $borderScales ?>px;">
-                                    <div class="jauges" style="width: <?= $anglais ?>%"></div>
-                                </div>
-                                <p>
-                                    Niveau courant. Compréhension, expression, orale comme écrite.
-                                </p>
-                            </div>
-                            <div class="d-flex flex-column w-100">
-                                <span>Espagnol&nbsp;:</span>
-                                <div class="scale" style="border: solid black <?= $borderScales ?>px;">
-                                    <div class="jauges" style="width: <?= $espagnol ?>%"></div>
-                                </div>
-                                <p>
-                                    Bon niveau de compréhension.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- FIN BLOC COMPETENCES NUMERIQUES -->
-
-            <!-- DEBUT BLOC COMPETENCES DIVERSES ET EXPERIENCES -->
-            <div class="colonne d-flex flex-column justify-content-between">
-                <section class="blocs flex-grow-1">
-                    <div class="text-center">
-                        <h2>Compétences</h2>
-                        <ul id="competences">
-                            <li>Esprit logique</li>
-                            <li>Méthodologie</li>
-                            <li>Curiosité</li>
-                            <li>Créativité</li>
-                            <li>Polyvalence</li>
-                            <li>Autonomie</li>
-                            <li>Pédagogie/Didactique</li>
-                            <li>Esprit d'équipe</li>
-                        </ul>                        
-                    </div>
-                </section>
-
-                <section class="blocs flex-grow-1">
-                    <h2 class="text-center">Parcours / Expériences</h2>
-                    <ul class="list-group list-group-flush mx-4">
+				<section class="blocs flex-grow-1">
+					<h2 class="text-center">Parcours / Expériences</h2>
+					<ul class="list-group list-group-flush mx-4">
 						<li class="list-group-item">
-                            <h5>02-2024&nbsp;: Piscine 42</h5>
-                            Participation à la piscine de 42. Non-retenu malgré une bonne note à l'examen final.<br>
+							<h5>2024&nbsp;: Apprentissage en auto-didacte</h5>
+							Approfondissement des notions en Javascript via différentes ressources dont Openclassrooms
+						</li>
+						<li class="list-group-item">
+							<h5>02-2024&nbsp;: Piscine 42</h5>
+							Participation à la piscine de 42. Bonne note à l'examen final.<br>
 							Introduction au langage C et au fonctionnement à plus bas niveau, gestion de la mémoire vive, algorithmique.
-                        </li>
-                        <li class="list-group-item">
-                            <h5>06/22=>02/23&nbsp;:<br>
-                                Cursus Paris Code à La Passerelle</h5>
-                            Formation intensive et complète au métier de Développement Web :<br>
-                            ➡︎ Intégration web <br>
-                            ➡︎ JavaScript, React, nodeJS<br>
-                            ➡︎ PHP, SQL et Symfony <br>
-                            ➡︎ Travail collaboratif avec designers <br>
-                            ➡︎ Stage de 3 mois en entreprise
-                        </li>
-                        <li class="list-group-item">
-                            <h5>2018-Aujourd'hui&nbsp;: Projets persos</h5>
-                            Production de contenu sur internet.<br>
-							Montage vidéo, graphisme, contenu didactique, gestion de projets en équipe.<br>
-                            Revenus totaux de + de 20 000€.<br>
-                        </li>
-                        <li class="list-group-item">
-                            <h5>2017&nbsp;: Licence STAPS</h5>
-                            Option Education et Motricité 2nd degré (Pour enseignement en collège/lycée)
-                        </li>
-                    </ul>
-                </section>
-            </div>
-            <!-- FIN BLOC COMPETENCES DIVERSES ET EXPERIENCES -->
+						</li>
+						<li class="list-group-item">
+							<h5>06/22=>02/23&nbsp;:	Bootcamp Webdev</h5>
+							Formation intensive au métier de Développeur Web effectué à La Passerelle:<br>
+							➡︎ Intégration web <br>
+							➡︎ JavaScript, React, nodeJS<br>
+							➡︎ PHP, SQL et Symfony <br>
+							➡︎ Méthode Agile<br>
+						</li>
+						<li class="list-group-item">
+							<h5>2018-Aujourd'hui&nbsp;: Entrepreneuriat</h5>
+							Production de contenu sur internet.<br>
+							Montage vidéo, graphisme, contenu didactique, gestion de projets, évènementiel<br>
+						</li>
+						<li class="list-group-item">
+							<h5>2017&nbsp;: Licence STAPS</h5>
+							Option Education et Motricité 2nd degré (Pour enseignement en collège/lycée)
+						</li>
+					</ul>
+				</section>
+			</div>
+			<!-- FIN BLOC COMPETENCES DIVERSES ET EXPERIENCES -->
 
-        </div>
+		</div>
 
 
-    </main>
+	</main>
 
-    <!--  FIN DU MAIN -->
+	<!--  FIN DU MAIN -->
 
-    <footer>
+	<footer>
 
-        <p id="hobbies">Centres d'intérêts</p>
+		<p id="hobbies">Centres d'intérêts</p>
 
-        <div id="footer">
-            <ul class="nav nav-pills align-items-center justify-content-evenly">
-                <li class="nav-item"><i class="fa-solid fa-code"></i></li>
-                <li class="nav-item d-flex justify-content-center"><i class="fa-solid fa-gamepad mx-md-2"></i></i><i class="fa-brands fa-steam mx-md-2"></i></li>
-                <li class="nav-item"><i class="fa-solid fa-video"></i></li>
-                <li class="nav-item"><i class="fa-solid fa-brain mx-md-2"></i><i class="fa-solid fa-user mx-md-2"></i></li>
-                <li class="nav-item"><i class="fa-solid fa-futbol"></i></li>
-            </ul>
+		<div id="footer">
+			<ul class="nav nav-pills align-items-center justify-content-evenly">
+				<li class="nav-item"><i class="fa-solid fa-code"></i></li>
+				<li class="nav-item d-flex justify-content-center"><i class="fa-solid fa-gamepad mx-md-2"></i></i><i class="fa-brands fa-steam mx-md-2"></i></li>
+				<li class="nav-item"><i class="fa-solid fa-video"></i></li>
+				<li class="nav-item"><i class="fa-solid fa-brain mx-md-2"></i><i class="fa-solid fa-user mx-md-2"></i></li>
+				<li class="nav-item"><i class="fa-solid fa-futbol"></i></li>
+			</ul>
 
-            <ul class="nav nav-pills align-items-center justify-content-evenly">
-                <li class="nav-item justify-content-center">Numérique</li>
-                <li class="nav-item justify-content-center">Jeux-vidéos</li>
-                <li class="nav-item justify-content-center">Séries-TV</li>
-                <li class="nav-item justify-content-center">Sciences humaines</li>
-                <li class="nav-item justify-content-center">Sport</li>
-            </ul>
-        </div>
+			<ul class="nav nav-pills align-items-center justify-content-evenly">
+				<li class="nav-item justify-content-center">Numérique</li>
+				<li class="nav-item justify-content-center">Jeux-vidéos</li>
+				<li class="nav-item justify-content-center">Séries</li>
+				<li class="nav-item justify-content-center">Sciences humaines</li>
+				<li class="nav-item justify-content-center">Sport</li>
+			</ul>
+		</div>
 
-    </footer>
+	</footer>
 
 </body>
 <script src="index.js"></script>
@@ -278,23 +266,23 @@ let largeurJauge = [];
 
 
 for (let i = 0; i < jauges.length; i++) {
-    // La fonction offsetWidth renvoie la largeur en pixels. On la convertit en pourcentage de remplissage de la barre (scale)
-    largeurJauge[i] = (jauges[i].offsetWidth / (largeurMaxJauge / 100))
-    // On joue sur les paramètres r et g du rgb pour passer du rouge au vert. Pour des valeurs basses on voudra du rouge + foncé donc on réduit également le paramètre "r".
-    if (largeurJauge[i] < 35) {
-        r[i] = (130 - (largeurJauge[i] * 1.3))
-        g[i] = (0 + (largeurJauge[i] * 1.3))
-    } else {
-        r[i] = (255 - (largeurJauge[i] * 2.55))
-        g[i] = (0 + (largeurJauge[i] * 2.55))
-    }
-    // On applique finalement le style (couleur et transparence) aux jauges avec les valeurs définies ci-dessus. La transparence commence à 0.75 car des valeurs trop basses renvoient des couleurs claires sur du blanc.
-    jauges[i].style.backgroundColor = `rgba(
-        ${r[i]},
-        ${g[i]},
-        0,
-        ${0.75 + (largeurJauge[i] / 400)}
-        )`;
+	// La fonction offsetWidth renvoie la largeur en pixels. On la convertit en pourcentage de remplissage de la barre (scale)
+	largeurJauge[i] = (jauges[i].offsetWidth / (largeurMaxJauge / 100))
+	// On joue sur les paramètres r et g du rgb pour passer du rouge au vert. Pour des valeurs basses on voudra du rouge + foncé donc on réduit également le paramètre "r".
+	if (largeurJauge[i] < 35) {
+		r[i] = (130 - (largeurJauge[i] * 1.3))
+		g[i] = (0 + (largeurJauge[i] * 1.3))
+	} else {
+		r[i] = (255 - (largeurJauge[i] * 2.55))
+		g[i] = (0 + (largeurJauge[i] * 2.55))
+	}
+	// On applique finalement le style (couleur et transparence) aux jauges avec les valeurs définies ci-dessus. La transparence commence à 0.75 car des valeurs trop basses renvoient des couleurs claires sur du blanc.
+	jauges[i].style.backgroundColor = `rgba(
+		${r[i]},
+		${g[i]},
+		0,
+		${0.75 + (largeurJauge[i] / 400)}
+		)`;
 }
 -->
 

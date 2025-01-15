@@ -14,7 +14,6 @@ ul, li {
 }
 
 
-
 /* Couleurs :
 Bleu marine/Foncé : rgb(19, 23, 73) 3px;
 
@@ -48,12 +47,19 @@ nav {
     padding-top: 1px;
 }
 
+div#profile-pic {
+	height: 20rem;
+}
+
 div#profile-pic img {
     width: 80%;
+	height: 80%;
     border: ridge rgb(19, 23, 73) 3px;
     border-radius: 50%;
     box-shadow: 15px 15px 15px rgba(32, 32, 32, 0.8);
     margin: 5px auto;
+    object-fit: cover;
+    
 }
 
 nav i,
@@ -68,7 +74,7 @@ nav a:hover {
 }
 
 .blocs-nav {
-    width: 30%;
+    width: 30vw;
 }
 
 .blocs-nav:first-child {
